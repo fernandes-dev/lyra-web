@@ -10,14 +10,14 @@ import {
 import { useRouter } from 'next/dist/client/router'
 import * as React from 'react'
 import { lyraApi } from '../../../services/api'
-import { PasswordField } from './PasswordField'
+import PasswordField from './PasswordField'
 
 type LoginInput = {
   email: string
   password: string
 }
 
-export const LoginForm = (props: HTMLChakraProps<'form'>) => {
+const LoginForm = (props: HTMLChakraProps<'form'>) => {
   const [user, setUer] = React.useState({ email: '', password: '' })
   const router = useRouter()
 
@@ -63,3 +63,5 @@ export const LoginForm = (props: HTMLChakraProps<'form'>) => {
     </chakra.form>
   )
 }
+
+export default LoginForm

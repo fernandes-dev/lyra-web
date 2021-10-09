@@ -1,7 +1,7 @@
 import { chakra, HTMLChakraProps, useColorModeValue } from '@chakra-ui/system'
 import * as React from 'react'
 
-export const Link = (props: HTMLChakraProps<'a'>) => (
+const Link = (props: HTMLChakraProps<'a'>) => (
   <chakra.a
     marginStart="1"
     href="#"
@@ -11,3 +11,5 @@ export const Link = (props: HTMLChakraProps<'a'>) => (
     {...props}
   />
 )
+
+export default Link

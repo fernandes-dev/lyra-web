@@ -6,9 +6,9 @@ import {
 } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import * as React from 'react'
-import { Card } from './components/Card'
-import { Link } from './components/Link'
-import { LoginForm } from './components/LoginForm'
+import Card from './components/Card'
+import Link from './components/Link'
+import LoginForm from './components/LoginForm'
 
 const Login: NextPage = () => {
   return (<Box
